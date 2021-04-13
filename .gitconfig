@@ -6,3 +6,4 @@
   trash ="!x(){ git stash push -u && git stash drop ;};x"
   current = rev-parse --abbrev-ref HEAD
   ppush = push -u origin HEAD
+  sync = "!x() { git fetch origin $1:$1 ;}; x" 
