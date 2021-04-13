@@ -1,0 +1,6 @@
+[alias]
+  logxx = log -16 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(magenta)<%an>%Creset' --abbrev-commit
+  logx = log -12 --graph --pretty=format:'%s %Cgreen(%cr) %C(magenta)<%an>%Creset' --abbrev-commit
+  diffx = diff --cached
+  diff1 = diff HEAD^ HEAD
+  trash ="!x(){ git stash push -u && git stash drop ;};x"
