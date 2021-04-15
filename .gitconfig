@@ -17,3 +17,4 @@
   # write your own name and email address
   confighome = "!x() { git config --global user.name 'your home name' && git config --global user.email "your.hoem@email" ;};x"     
   configwork = "!x() { git config --global user.name 'your work name' && git config --global user.email "your.work@email" ;};x"
+  back = checkout -
