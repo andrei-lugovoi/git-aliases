@@ -16,6 +16,6 @@
   rename = "!x() { git checkout $1 && git branch -m $2 && git push origin -u $2 && git delete $1 ;}; x"
   
   # write your own name and email address
-  confighome = "!x() { git config --global user.name 'your home name' && git config --global user.email "your.hoem@email" ;};x"     
+  confighome = "!x() { git config --global user.name 'your home name' && git config --global user.email "your.home@email" ;};x"     
   configwork = "!x() { git config --global user.name 'your work name' && git config --global user.email "your.work@email" ;};x"
   back = checkout -
