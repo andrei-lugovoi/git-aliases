@@ -13,6 +13,8 @@
   change-commits = "!x() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
   
   delete-branch-r = "!x() { git push origin --delete $1 ;}; x"
+  delete-branch-l = branch -d
+
   rename-branch-r = "!x() { git checkout $1 && git branch -m $2 && git push origin -u $2 && git delete $1 ;}; x"
   
   # write your own name and email address
