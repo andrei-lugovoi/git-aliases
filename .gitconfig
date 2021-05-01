@@ -14,8 +14,6 @@
   
   delete-branch-r = "!x() { git push origin --delete $1 ;}; x"
   delete-branch-l = branch -d
-
-  rename-branch-r = "!x() { git checkout $1 && git branch -m $2 && git push origin -u $2 && git delete $1 ;}; x"
   
   # write your own name and email address
   config-home = "!x() { git config --global user.name 'your home name' && git config --global user.email "your.home@email" ;};x"     
