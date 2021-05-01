@@ -12,8 +12,8 @@
   # from https://github.com/brauliobo/gitconfig/blob/master/configs/.gitconfig
   change-commits = "!x() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ \\\"$`echo $VAR`\\\" = '$OLD' ]]; then export $VAR='$NEW'; fi\" $@; }; f "
   
-  delete-branch = "!x() { git push origin --delete $1 ;}; x"
-  rename-branch = "!x() { git checkout $1 && git branch -m $2 && git push origin -u $2 && git delete $1 ;}; x"
+  delete-branch-r = "!x() { git push origin --delete $1 ;}; x"
+  rename-branch-r = "!x() { git checkout $1 && git branch -m $2 && git push origin -u $2 && git delete $1 ;}; x"
   
   # write your own name and email address
   config-home = "!x() { git config --global user.name 'your home name' && git config --global user.email "your.home@email" ;};x"     
