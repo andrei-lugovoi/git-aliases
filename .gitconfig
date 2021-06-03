@@ -16,8 +16,8 @@
   delete-branch-l = branch -d
   
   # write your own name and email address
-  config-home = "!x() { git config --global user.name 'your home name' && git config --global user.email "your.home@email" ;};x"     
-  config-work = "!x() { git config --global user.name 'your work name' && git config --global user.email "your.work@email" ;};x"
+  config-home = "!x() { git config --local user.name 'your home name' && git config --local user.email "your.home@email" git config user.email ;};x"     
+  config-work = "!x() { git config --local user.name 'your work name' && git config --local user.email "your.work@email" git config user.email ;};x"
   back = checkout -
   prefinish = "!x() { git sync develop && git pull origin develop ;}; x"
   forcefinish = "!x() { git prefinish && git trash && git flow finish ;}; x"
