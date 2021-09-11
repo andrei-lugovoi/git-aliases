@@ -4,6 +4,7 @@
   diffc = diff --cached --find-renames
   diffx = diff --cached
   diff1 = diff HEAD^ HEAD
+  s = status
   trash ="!x(){ git stash push -u && git stash drop ;};x"
   current = rev-parse --abbrev-ref HEAD
   ppush = push -u origin HEAD
